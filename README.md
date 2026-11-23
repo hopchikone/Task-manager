@@ -18,7 +18,7 @@
 | **`android/`** | Исходники Android-приложения (Java + Gradle, без сторонних библиотек) |
 | **`web/`** | PWA-версия для браузера: `index.html`, `style.css`, `app.js`, manifest, service worker |
 | **`docs/`** | Инструкция по установке и автономная версия `dnevnik-zadaniy.html` |
-| `docs/УСТАНОВКА-APK.md` | Как установить APK и что разрешить для уведомлений |
+| `docs/INSTALL-APK.md` | Как установить APK и что разрешить для уведомлений |
 
 ## Возможности
 
@@ -44,7 +44,7 @@
 3. В приложении: 🔔 → включить напоминания, выбрать время и за сколько дней напоминать.
 
 Подробности и решение проблем с уведомлениями (Xiaomi, Samsung, Realme) —
-в [`docs/УСТАНОВКА-APK.md`](docs/УСТАНОВКА-APK.md).
+в [`docs/INSTALL-APK.md`](docs/INSTALL-APK.md).
 
 Веб-версия: откройте `web/index.html` через любой хостинг (GitHub Pages, Netlify)
 и установите как PWA, либо используйте автономный `docs/dnevnik-zadaniy.html`.
