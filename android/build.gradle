@@ -1,0 +1,44 @@
+plugins {
+    id 'com.android.application' version '8.5.2'
+}
+
+android {
+    namespace 'com.arena.zadaniya'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.arena.zadaniya"
+        minSdk 23
+        targetSdk 34
+        versionCode 2
+        versionName "1.1"
+    }
+
+    // Подпись своим ключом, чтобы APK ставился на телефон напрямую
+    signingConfigs {
+        release {
+            storeFile file("keystore.jks")
+            storePassword "zadaniya123"
+            keyAlias "zadaniya"
+            keyPassword "zadaniya123"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+        }
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+}

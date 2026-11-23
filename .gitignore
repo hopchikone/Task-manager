@@ -1,0 +1,10 @@
+# сборка Android
+android/build/
+android/sdk/
+android/tools/
+android/local.properties
+
+# система
+.DS_Store
+Thumbs.db
+*.log
